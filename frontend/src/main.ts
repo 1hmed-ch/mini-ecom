@@ -11,11 +11,11 @@ bootstrapApplication(AppComponent, {
     provideRouter(routes),
     provideHttpClient(),
     provideAuth0({
-      domain: '',
-      clientId: '',
+      domain: 'https://dev-1hmed-ch.us.auth0.com/',
+      clientId: 'p1eXLgVKeAEUMNSIuUYVUbAxg9DB11PP',
       authorizationParams: {
         redirect_uri: window.location.origin,
-        audience: ''
+        audience: 'https://mini-ecommerce-api'
       },
       httpInterceptor: {
         allowedList: [
@@ -23,7 +23,7 @@ bootstrapApplication(AppComponent, {
             uri: 'http://localhost:8080/api/*',
             tokenOptions: {
               authorizationParams: {
-                audience: 'YOUR_AUTH0_AUDIENCE'
+                audience: 'https://mini-ecommerce-api'
               }
             }
           }
