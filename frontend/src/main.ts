@@ -2,8 +2,7 @@ import { bootstrapApplication } from '@angular/platform-browser';
 import { provideRouter } from '@angular/router';
 import { provideHttpClient } from '@angular/common/http';
 import { provideAuth0 } from '@auth0/auth0-angular';
-// @ts-ignore
-import { AppComponent } from './app/app.component';
+import { AppComponent } from './app/app';
 import { routes } from './app/app.routes';
 
 bootstrapApplication(AppComponent, {
